@@ -1,0 +1,357 @@
+/*common css*/
+/*common classes can be used for both mobile screen and desktop screen*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #444444;
+}
+
+a {
+    color: #1999d2;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.zIndexOne {
+    z-index: 1;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.captialize {
+    text-transform: capitalize;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.flex {
+    display: flex;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.justifyCenter {
+    justify-content: center;
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+/*colors*/
+.textWhite {
+    color: #ffffff;
+}
+.App{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+
+/*as per design */
+.college-wrap {
+    padding: 50px 30px;
+}
+
+.college-wrap .heading {
+    margin-bottom: 69px;
+}
+/* .college-wrap--list{
+    height:400px;
+    overflow-y: scroll;
+} */
+
+.list-row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.list-row .list-row--item {
+    border-radius: 4px;
+    box-shadow: 0 0 19px 0 rgba(68, 68, 68, 0.1);
+    background-color: #ffffff;
+    min-width: 600px;
+    max-width: 600px;
+    margin-bottom: 60px;
+
+}
+
+.list-row .list-row--item:nth-of-type(odd) {
+    margin-right: 20px;
+}
+
+.list-row--item .college-image {
+    min-height: 234px;
+    max-height: 234px;
+    background: url("../image/college_01.jpg") no-repeat;
+    background-size: cover;
+    padding: 14px;
+}
+
+.list-row .list-row--item:nth-of-type(odd) .college-image {
+    background: url("../image/college_02.jpg") no-repeat;
+
+}
+
+.college-image:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.flag {
+    background-color: #68a7ff;
+    padding: 11px;
+    min-width: 137px;
+    max-width: 137px;
+    top: -20px;
+    right: 0;
+    z-index: 1;
+}
+
+.flag:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid #68a7ff;
+    border-left: 20px solid transparent;
+    left: -20px;
+    top: 0;
+}
+
+.flag:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #68a7ff;
+    border-left: 20px solid transparent;
+    left: -20px;
+    bottom: 0
+
+}
+
+.flag .flagText {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.2
+}
+
+.rating {
+    border-radius: 4px;
+    background-color: #f5a626;
+    padding: 9px;
+    margin-top: 28px;
+}
+
+.rating p {
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.rating p span, .rating span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.pills {
+    flex-wrap: wrap;
+}
+
+.pills span {
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px;
+    background: #ffffff;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-right: 7px;
+    margin-bottom: 5px;
+}
+
+.pills span:last-child {
+    margin-right: 0;
+}
+
+.description {
+    font-size: 14px;
+}
+
+.college-keyPoints {
+    bottom: 15px;
+    left: 0;
+    width: 100%;
+    padding: 0 14px;
+}
+
+.about-college {
+    background: #ffffff;
+    padding: 10px 17px;
+    border: 0.2px solid rgba(68, 68, 68, 0.1);
+    min-height: 150px;
+    max-height: 150px;
+}
+
+.about-college .college-name {
+    margin-bottom: 10px;
+}
+
+.about-college .location {
+    font-size: 13px;
+    margin-bottom: 17px;
+}
+
+.about-college .location span {
+    color: #adadad;
+    font-size: 13px;
+}
+
+.location--nearPoint {
+    font-size: 13px;
+    color: #adadad;
+    margin-bottom: 9px;
+}
+
+.location--nearPoint span:first-child {
+    color: #37b396;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.location--nearPoint span:nth-child(2), .location--nearPoint span:last-child {
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.original-price {
+    margin-bottom: 15px;
+}
+
+.original-price strike {
+    font-size: 11px;
+}
+
+.original-price span {
+    font-size: 11px;
+    background: #dd1c26;
+    padding: 1px 4px;
+    margin-left: 10px;
+}
+
+.original-price span:before {
+    position: absolute;
+    left: -6px;
+    top: 0;
+    content: "";
+    border-right: solid 6px #dd1c26;
+    border-bottom: solid 7px transparent;
+    border-top: solid 7px transparent;
+}
+
+.original-price span:after {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #fff;
+    left: 1px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.discount-price {
+    line-height: 20px;
+}
+
+.discount-price p {
+    color: #dd1c26;
+    font-size: 28px;
+    font-weight: 700;
+
+}
+
+.discount-price span {
+    font-size: 11px;
+}
+
+.aminties {
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+
+.aminties p, .aminties p span, .aminties p a {
+    font-size: 13px;
+}
+
+.aminties p {
+    background-color: #ccf5e7;
+    padding: 11px 21px 11px 17px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    font-weight: 700;
+}
+
+.aminties p span {
+    color: #4bb89e;
+}
+
+.more-aminties {
+    margin-right: 10px;
+}
+
+.more-aminties span {
+    color: #37b396;
+    font-weight: 700;
+    font-size: 13px;
+    margin: 0 6px;
+    position: relative;
+}
+
+.more-aminties span:last-child:before {
+    position: absolute;
+    content: '';
+    left: -4px;
+    width: 4px;
+    height: 4px;
+    background-color: #37b396;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    border-radius: 50%;
+}
